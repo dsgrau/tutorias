@@ -1,13 +1,11 @@
-=begin
-Given an array containing all numbers from 1 to N with the exception of one return the missing number.
-    Example input:
-    array: 5 4 1 2
-    Example output:
-    3
-=end
-
 def missing_number v
-   
+   n = v.length
+   #complete_array = []
+   #n.times do |x|
+   # complete_array << x+1     
+   #end
+   complete_array = [*1..n]
+   (complete_array - v).first
 end
   
   

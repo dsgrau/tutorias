@@ -1,8 +1,18 @@
-=begin
-Dado 3 numeros decir si es o no es un triangulo.
-    Para eso hacer una clase triangulo que reciba los 3 números en el initializer e implementar el método valid? que retorne true o false dependiendo si es o no un triángulo.
-=end
+class triangulo
+  
+  attr_accessor :a, :b, :c
 
-def triangulo
+  def initialize a, b, c
+    self.a = a
+    self.b = b
+    self.c = c
+  end
+
+  def valid?
+    if @a + @b > @c and @b + @c > @a and @a + @c > @b
+      true
+    else
+      false
+  end
 
 end
